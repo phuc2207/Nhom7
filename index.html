@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="WebQuest Tin học 10 - Lập trình viên giải cứu cửa hàng" />
+  <title>WebQuest Tin học 10 | Lập trình viên giải cứu cửa hàng</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#trang-chu" aria-label="Về đầu trang">
+        <span class="brand-mark">{ }</span>
+        <span><strong>WebQuest Tin học 10</strong><small>Lập trình viên giải cứu cửa hàng</small></span>
+      </a>
+      <nav class="main-nav" aria-label="Điều hướng chính">
+        <a href="#lo-trinh">Lộ trình</a>
+        <a href="#hanh-trinh">8 chặng</a>
+        <a href="#bieu-mau">Biểu mẫu</a>
+        <a href="#tai-nguyen">Học liệu</a>
+        <a href="#danh-gia">Rubric</a>
+        <a href="#nop-bai">Nộp bài</a>
+      </nav>
+      <a class="btn btn-soft header-cta" href="#hanh-trinh">Bắt đầu</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="trang-chu" class="hero section">
+      <div class="hero-copy">
+        <div class="hero-badge">TIN HỌC 10 · CHỦ ĐỀ F · 5 TUẦN × 2 TIẾT</div>
+        <h1>Giải cứu một cửa hàng bằng <span>Python</span>.</h1>
+        <p>
+          Mini Mart An Khang cần một chương trình tính hóa đơn đáng tin cậy. Nhóm của em sẽ đi qua toàn bộ quy trình:
+          hiểu bài toán, phân tích dữ liệu, thiết kế thuật toán, lập trình, kiểm thử, gỡ lỗi, hoàn thiện và báo cáo sản phẩm.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#hanh-trinh">Xem 8 chặng</a>
+          <a class="btn btn-ghost" href="#bieu-mau">Mở biểu mẫu</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>8</strong><span>chặng WebQuest</span></div>
+          <div><strong>5</strong><span>tuần thực hiện</span></div>
+          <div><strong>30</strong><span>điểm rubric</span></div>
+          <div><strong>12–15'</strong><span>báo cáo theo rubric</span></div>
+        </div>
+      </div>
+      <div class="hero-visual" aria-label="Minh họa dự án">
+        <div class="visual-card receipt-card">
+          <span class="mini-label">BÀI TOÁN THẬT</span>
+          <div class="receipt-line"><span>Mì gói × 10</span><b>?</b></div>
+          <div class="receipt-line"><span>Giảm theo số lượng</span><b>5%</b></div>
+          <div class="receipt-line"><span>Giảm theo hóa đơn</span><b>3% / 5%</b></div>
+          <div class="receipt-total"><span>Máy tính phải làm đúng mọi trường hợp</span><strong>✓</strong></div>
+        </div>
+        <div class="visual-card code-card">
+          <span class="mini-label">QUY TRÌNH DỰ ÁN</span>
+          <pre><code>problem → data → algorithm
+        → code → test → debug
+        → report → acceptance</code></pre>
+        </div>
+        <div class="floating-note note-a">Học liệu theo từng chặng</div>
+        <div class="floating-note note-b">Vé qua chặng + rubric rõ ràng</div>
+      </div>
+    </section>
+
+    <section class="section project-overview">
+      <div class="section-head">
+        <div>
+          <span class="section-kicker">BỐI CẢNH DỰ ÁN</span>
+          <h2>Học như một nhóm phát triển phần mềm</h2>
+        </div>
+        <p>Mỗi chặng có nhiệm vụ, học liệu, sản phẩm, checklist và vé kiểm tra. Nhóm phải để lại dấu vết quá trình, không chỉ nộp một đoạn mã ở cuối.</p>
+      </div>
+      <div class="principle-grid">
+        <article><span>01</span><h3>Hiểu bài toán trước</h3><p>Không mở Python khi nhóm chưa biết dữ liệu vào, dữ liệu ra và quy tắc cần xử lí.</p></article>
+        <article><span>02</span><h3>Kiểm thử có chủ đích</h3><p>Không chỉ thử ví dụ dễ. Giá trị biên và dữ liệu sai mới là nơi lỗi thường xuất hiện.</p></article>
+        <article><span>03</span><h3>Giải thích được sản phẩm</h3><p>Mỗi thành viên phải hiểu phần mình làm và trả lời được câu hỏi về chương trình.</p></article>
+        <article><span>04</span><h3>Tuần cuối chỉ báo cáo</h3><p>Sản phẩm phải được hoàn thiện trước tuần 5 để thời gian cuối dành cho trình bày và nghiệm thu.</p></article>
+      </div>
+      <div class="discount-box">
+        <div class="discount-title"><span class="section-kicker">QUY TẮC MINI MART</span><h3>3 quy định công khai</h3></div>
+        <div class="discount-item"><b>1</b><p>Mua từ <strong>10 sản phẩm trở lên</strong> của cùng một mặt hàng thì mặt hàng đó giảm <strong>5%</strong>.</p></div>
+        <div class="discount-item"><b>2</b><p>Hóa đơn từ <strong>200.000đ</strong> giảm <strong>3%</strong>; từ <strong>500.000đ</strong> giảm <strong>5%</strong>.</p></div>
+        <div class="discount-item"><b>3</b><p>Khách có thẻ thành viên được giảm thêm <strong>2%</strong>.</p></div>
+      </div>
+    </section>
+
+    <section id="lo-trinh" class="section timeline-section">
+      <div class="section-head compact">
+        <div><span class="section-kicker">PHÂN BỔ THỜI LƯỢNG</span><h2>5 tuần, mỗi tuần 2 tiết</h2></div>
+        <p>Tuần 5 chỉ dùng để báo cáo, chạy thử, hỏi đáp và nghiệm thu sản phẩm.</p>
+      </div>
+      <div id="timelineGrid" class="timeline-grid"></div>
+    </section>
+
+    <section class="section roles">
+      <div class="section-head compact">
+        <div><span class="section-kicker">PHÂN VAI</span><h2>Mỗi thành viên đều có trách nhiệm</h2></div>
+        <p>Vai trò có thể luân phiên sau mỗi 2 tiết.</p>
+      </div>
+      <div class="role-strip">
+        <div class="role-card"><span>01</span><b>Nhóm trưởng</b><small>Điều phối · tiến độ</small></div>
+        <div class="role-card"><span>02</span><b>Phân tích viên</b><small>Dữ liệu · điều kiện</small></div>
+        <div class="role-card"><span>03</span><b>Lập trình viên</b><small>Viết mã · chạy thử</small></div>
+        <div class="role-card"><span>04</span><b>Kiểm thử viên</b><small>Bộ test · nhật ký lỗi</small></div>
+        <div class="role-card"><span>05</span><b>Thuyết trình viên</b><small>Tổng hợp · báo cáo</small></div>
+      </div>
+    </section>
+
+    <section id="hanh-trinh" class="section journey">
+      <div class="section-head">
+        <div><span class="section-kicker">HÀNH TRÌNH WEBQUEST</span><h2>8 chặng, mở dần theo tiến độ</h2></div>
+        <p>Chọn một chặng để xem mục tiêu, nhiệm vụ, học liệu, sản phẩm, checklist, gợi ý và vé qua chặng.</p>
+      </div>
+      <div id="progressBar" class="progress-track" aria-label="Tiến độ dự án"></div>
+      <div class="journey-layout">
+        <aside id="stageMenu" class="stage-menu" aria-label="Danh sách chặng"></aside>
+        <article id="stagePanel" class="stage-panel"></article>
+      </div>
+    </section>
+
+    <section id="bieu-mau" class="section forms-section">
+      <div class="section-head">
+        <div><span class="section-kicker">BIỂU MẪU & VÉ QUA CHẶNG</span><h2>Liên kết đúng chỗ, không bắt học sinh tự đi săn</h2></div>
+        <p>Chặng 3 có kênh hỏi đáp riêng trên Padlet. Các vé đã có Google Forms được mở trực tiếp tại đây.</p>
+      </div>
+      <div id="formGrid" class="forms-grid"></div>
+      <div class="padlet-card">
+        <div>
+          <span class="section-kicker">CHẶNG 3 · HỎI CHỦ CỬA HÀNG</span>
+          <h3>Soạn câu hỏi làm rõ quy tắc trên Padlet</h3>
+          <p>Mỗi nhóm đăng ít nhất một câu hỏi về điểm chưa rõ trong quy tắc giảm giá, đọc phản hồi rồi cập nhật Phiếu 3.</p>
+        </div>
+        <a class="btn btn-primary" href="https://padlet.com/Pohuc/ban-se-at-cau-hoi-nao-e-lam-ro-quy-tac-giam-gia-trong-he-tho-s0246abo6cgwdo8e64x9" target="_blank" rel="noopener">Mở Padlet Chặng 3 ↗</a>
+      </div>
+    </section>
+
+    <section id="tai-nguyen" class="section resources">
+      <div class="section-head compact">
+        <div><span class="section-kicker">HỌC LIỆU</span><h2>Kho tài nguyên theo đúng chặng</h2><p class="resource-note">Các tài nguyên học sinh được phép sử dụng trong thư mục Drive đã được gắn link trực tiếp tại đây.</p></div>
+        <select id="resourceFilter" class="control" aria-label="Lọc tài nguyên"><option value="all">Tất cả tài nguyên</option></select>
+      </div>
+      <div id="resourceGrid" class="resource-grid"></div>
+    </section>
+
+    <section id="danh-gia" class="section assessment">
+      <div class="section-head">
+        <div><span class="section-kicker">RUBRIC DỰ ÁN</span><h2>30 điểm, quy về thang 10 bằng cách chia 3</h2></div>
+        <p>Rubric trên website được nhập lại từ file Rubric dự án.docx mà giáo viên cung cấp.</p>
+      </div>
+      <div class="rubric-summary">
+        <div><strong>9</strong><span>Kỹ năng trình bày</span></div>
+        <div><strong>15</strong><span>Đánh giá sản phẩm</span></div>
+        <div><strong>6</strong><span>Hình thức báo cáo</span></div>
+        <div class="rubric-actions"><a class="btn btn-ghost" href="assets/Rubric_du_an.docx" download>Tải rubric DOCX ↓</a><a class="btn btn-soft" href="https://docs.google.com/document/d/1s1gv-UN68kJpZ2U3hbEOprso5xs6XlW_/view" target="_blank" rel="noopener">Mở rubric trên Drive ↗</a></div>
+      </div>
+      <div class="rubric-switch">
+        <button class="rubric-tab active" data-rubric="presentation">Trình bày · 9đ</button>
+        <button class="rubric-tab" data-rubric="product">Sản phẩm · 15đ</button>
+        <button class="rubric-tab" data-rubric="report">Báo cáo · 6đ</button>
+      </div>
+      <div id="rubricWrap" class="rubric-wrap"></div>
+      <div id="rubricNotes" class="rubric-notes"></div>
+      <div class="score-box">
+        <div><span class="section-kicker">TÍNH ĐIỂM DỰ ÁN</span><h3>Tổng 30 điểm → thang 10</h3></div>
+        <label>Trình bày / 9<input id="scorePresentation" class="control" type="number" min="0" max="9" step="1" value="9"></label>
+        <label>Sản phẩm / 15<input id="scoreProduct" class="control" type="number" min="0" max="15" step="1" value="15"></label>
+        <label>Báo cáo / 6<input id="scoreReport" class="control" type="number" min="0" max="6" step="1" value="6"></label>
+        <div class="score-result"><small>Điểm dự án</small><strong id="scoreResult">10.0</strong><span id="scoreRaw">30/30</span></div>
+      </div>
+    </section>
+
+    <section id="nop-bai" class="section submit-section">
+      <div class="section-head">
+        <div><span class="section-kicker">NỘP SẢN PHẨM CUỐI</span><h2>Nộp qua Google Form</h2></div>
+        <p>Nhóm chuẩn bị đầy đủ báo cáo, chương trình, thuật toán, bảng kiểm thử, nhật ký lỗi và bài trình bày trước khi gửi.</p>
+      </div>
+      <div class="submit-layout">
+        <div class="submit-card">
+          <span class="section-kicker">HỒ SƠ CẦN CÓ</span>
+          <h3>Checklist trước khi mở Form</h3>
+          <div class="final-file-list">
+            <label><input type="checkbox"> Báo cáo dự án: bài toán, thuật toán, chương trình, kiểm thử, nhật ký lỗi và phân công.</label>
+            <label><input type="checkbox"> Chương trình Python bản cuối.</label>
+            <label><input type="checkbox"> Thuật toán/sơ đồ khối đã cập nhật.</label>
+            <label><input type="checkbox"> Bảng kiểm thử cuối.</label>
+            <label><input type="checkbox"> Nhật ký lỗi.</label>
+            <label><input type="checkbox"> Bài trình bày báo cáo sản phẩm.</label>
+            <label><input type="checkbox"> Tất cả link Drive đã bật quyền xem.</label>
+          </div>
+          <div class="submit-actions">
+            <a id="finalSubmissionBtn" class="btn btn-primary" href="https://forms.gle/Kjc7ism59AYpLVsC7" target="_blank" rel="noopener">Mở Google Form nộp sản phẩm ↗</a>
+          </div>
+          <p id="submissionStatus" class="submission-status">Nộp một lần khi nhóm đã hoàn thiện toàn bộ hồ sơ sản phẩm và kiểm tra quyền truy cập của các liên kết.</p>
+        </div>
+        <aside class="submit-checklist">
+          <span class="section-kicker">TUẦN 5</span>
+          <h3>Chỉ báo cáo và nghiệm thu</h3>
+          <p>Sản phẩm phải được hoàn thiện trước tuần cuối. Tuần 5 dùng để trình bày, chạy thử, trả lời câu hỏi, đánh giá đồng đẳng và nghiệm thu.</p>
+          <div class="callout"><strong>Thời gian rubric:</strong><span>12–15 phút được mức Tốt ở tiêu chí thời gian trình bày.</span></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section final-reflection">
+      <div><span class="section-kicker">KẾT THÚC DỰ ÁN</span><h2>Từ hóa đơn sai đến sản phẩm được bảo vệ trước lớp.</h2></div>
+      <div class="reflection-cards">
+        <article><span>01</span><p>Lỗi nào làm nhóm mất nhiều thời gian nhất?</p></article>
+        <article><span>02</span><p>Bộ kiểm thử nào phát hiện lỗi quan trọng nhất?</p></article>
+        <article><span>03</span><p>Điều gì làm chương trình dễ đọc và dễ sửa?</p></article>
+        <article><span>04</span><p>Nếu làm lại dự án, nhóm sẽ thay đổi điều gì?</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div><strong>WebQuest · Lập trình viên giải cứu cửa hàng</strong><p>Tin học 10 · Chủ đề F · Dạy học theo dự án</p></div>
+    <a href="#trang-chu">Lên đầu trang ↑</a>
+  </footer>
+
+  <dialog id="c6Dialog" class="quiz-dialog">
+    <form method="dialog" class="dialog-card quiz-card" id="c6Form">
+      <button class="dialog-close" value="cancel" aria-label="Đóng">×</button>
+      <span class="section-kicker">VÉ C6</span>
+      <h3>Bắt lỗi ranh giới</h3>
+      <p>Một chương trình viết nhầm <code>tong &gt; 200000</code> thay cho <code>tong &gt;= 200000</code>. Bộ dữ liệu nào phát hiện được lỗi?</p>
+      <div class="quiz-options">
+        <label><input type="radio" name="c6" value="A" required> A. Tổng 150.000 đồng</label>
+        <label><input type="radio" name="c6" value="B"> B. Tổng 200.000 đồng</label>
+        <label><input type="radio" name="c6" value="C"> C. Tổng 350.000 đồng</label>
+        <label><input type="radio" name="c6" value="D"> D. Tổng 500.000 đồng</label>
+      </div>
+      <div id="c6Feedback" class="quiz-feedback"></div>
+      <div class="quiz-actions"><button id="c6CheckBtn" class="btn btn-primary" type="button">Kiểm tra</button><button class="btn btn-ghost" value="cancel" type="submit">Đóng</button></div>
+    </form>
+  </dialog>
+
+  <script src="app.js"></script>
+</body>
+</html>
