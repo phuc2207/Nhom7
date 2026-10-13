@@ -28,3 +28,16 @@ dialog{width:min(520px,calc(100% - 28px));border:none;border-radius:18px;padding
 
 .resource-note{margin:8px 0 0;color:var(--muted);font-size:13px;max-width:720px}
 .rubric-actions{display:flex;gap:8px;flex-wrap:wrap}
+
+/* Bổ sung bản cập nhật, giữ bảng rubric cuộn ngang được trên màn hình nhỏ */
+.stage-format{margin:12px 0;padding:16px 18px;border-radius:15px;border:1px solid #c7dfd5;background:#f1f8f4;color:#244d42}
+.stage-format p{margin:6px 0 0;line-height:1.5}
+.criterion-scores{grid-column:1/-1;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px}
+.score-part{border:1px solid #c9d9ce;border-radius:14px;padding:14px;min-width:0}
+.score-part legend{font-weight:800;padding:0 6px}
+.score-part label{display:grid;gap:5px;margin:8px 0}
+.score-part label span{font-size:13px;font-weight:600}
+.score-part select{width:100%}
+.sample-section .principle-grid a{font-weight:800;text-decoration:underline;color:#225b45}
+.rubric-wrap{overflow:auto}
+@media(max-width:680px){.criterion-scores{grid-template-columns:1fr}}
