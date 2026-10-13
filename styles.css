@@ -41,3 +41,84 @@ dialog{width:min(520px,calc(100% - 28px));border:none;border-radius:18px;padding
 .sample-section .principle-grid a{font-weight:800;text-decoration:underline;color:#225b45}
 .rubric-wrap{overflow:auto}
 @media(max-width:680px){.criterion-scores{grid-template-columns:1fr}}
+
+
+/* ===== FIX RUBRIC: bo cuc 3 cot de cham diem, khong ep vao mot cot hep ===== */
+/* Bieu mau cham diem la mot cum doc lap, khong dung luoi 5 cot cu. */
+.score-box {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  align-items: start;
+  gap: 18px;
+  width: 100%;
+  min-width: 0;
+  padding: clamp(16px, 2.4vw, 26px);
+}
+.score-box > :first-child {grid-column: 1; min-width: 0;}
+.criterion-scores {
+  display: grid;
+  grid-column: 1;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: start;
+  gap: 16px;
+  width: 100%;
+  min-width: 0;
+}
+.score-part {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+  padding: 16px;
+  border: 1px solid #c9d9ce;
+  border-radius: 14px;
+  background: #fff;
+}
+.score-part legend {
+  max-width: 100%;
+  padding: 0 7px;
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 1.45;
+  white-space: normal;
+  color: var(--sage-dark);
+}
+.score-part label {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin: 12px 0;
+  min-width: 0;
+}
+.score-part label span {
+  font-size: 13px;
+  line-height: 1.4;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+.score-part select {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
+.score-result {
+  grid-column: 1;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  padding: 14px 18px;
+  border-left: none;
+  border-top: 1px solid #cddbd2;
+}
+.score-result small {font-weight: 800; font-size: 14px; color: var(--sage-dark);}
+.score-result strong {font-size: clamp(32px, 4vw, 42px);}
+.score-result span {font-size: 13px;}
+@media (max-width: 880px) {
+  .criterion-scores {grid-template-columns: repeat(2, minmax(0,1fr));}
+}
+@media (max-width: 600px) {
+  .criterion-scores {grid-template-columns: minmax(0,1fr);}
+  .score-part {padding: 14px;}
+}
